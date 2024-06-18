@@ -1,0 +1,83 @@
+*{
+    border: 0;
+    padding: 0;
+}
+body{
+    background-color: #080808;
+    color: white;
+}
+label{
+    font-size: 20px;
+    display: inline-block;
+    
+}
+
+label::first-letter{
+    font-size: 30px;
+    color: #F24462;
+}
+
+select{
+    width: 200px;
+    height: 40px;
+    font-size: 1.5rem;
+    border: 2px solid #080808;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px #010101f0;
+    background-color: #ccc;
+    display: block;
+}
+
+.count *{
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border:2px solid black;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ccc;
+}
+
+.ticket{
+    width: 50px;
+}
+
+button{
+
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin: 50px 0;
+    color: white;
+    border: 5px solid #F24462;
+    border-radius: 10px;
+    background-color: #F24462;
+    outline: 3px solid #080808 ;  
+    outline-offset: -5px;
+}
+    
+    
+button:hover{
+text-shadow: 0 0 5px white;
+box-shadow: 0px 0px 20px 0 #F24462;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+   margin: 0; 
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+

@@ -1,0 +1,23 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+   margin: 0; 
+}
+
+.box{
+    margin-top: -100px;
+    width: 600px;
+    height: 650px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

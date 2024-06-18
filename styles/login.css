@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #080808;
+    color: white;
+}
+body{
+    color: white;
+    background-color: #080808;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+
+.login{
+    text-align: center;
+    font-size: 50px;
+    padding: 10px;
+    margin: 30px 0;
+    font-weight: 500;
+}
+.login::first-letter{
+    font-weight:700;
+    font-size: 55px;
+}
+
+.box{
+    width: 500px;
+    height: 530px;
+    border: 2px solid #d7d7d7;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+label{
+    margin: 10px 0;
+    font-size: 25px;
+}
+label::first-letter{
+    font-size: 30px;
+}
+
+input{
+    height: 20px;
+    width: 250px;
+    padding: 10px;
+    border:2px solid #F24462;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #080808;
+    color: white;
+    font-size: 1rem;
+}
+
+    /* border: 2px solid #0CCAE3;        blueish color  */
+a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50%;
+    /* color: #0CCAE3; */
+}
+
+a::first-letter{
+    font-size: 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #0CCAE3;
+}
+
+a.visited{
+    text-decoration: none;
+    color: #0CCAE3;
+
+}
+
+
+.btn{
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin: 50px 0 0 0;
+    color: white;
+    border: 5px solid #F24462;
+    border-radius: 10px;
+    background-color: #F24462;
+    outline: 3px solid #080808 ;     /* doesn't influence other components */
+    outline-offset: -5px;
+}
+
+.btn:hover{
+    /* box-shadow: 0px 5px 10px #F24462; */
+    text-shadow: 0 0 5px white;
+    box-shadow: 0px 0px 20px 0 #F24462;
+}
+
+
+

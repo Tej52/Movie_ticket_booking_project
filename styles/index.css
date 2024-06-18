@@ -1,0 +1,40 @@
+*{
+    color: white;
+    background-color: #080808;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    /* text-decoration: underline; */
+    text-shadow: 0 0 20px white;
+}
+
+div{
+    font-size: 25px;
+    margin: 40vh 25px 0;
+    padding: 20px 40px;
+    display: inline-block;
+    border: 3px solid blue;
+    border-radius: 10px;
+}
+
+div:hover{
+    box-shadow: 0 0 20px 10px blue;
+}
+
+
+/* media@screen(max-length){
+
+} */
+
+
