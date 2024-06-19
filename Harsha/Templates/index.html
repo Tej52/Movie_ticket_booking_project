@@ -1,0 +1,34 @@
+{% extends 'header.html' %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block body %}
+    <!-- <h1>LOGIN</h1> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand nav-b" href="#">
+            <img src="https://img.icons8.com/ios-filled/50/b.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            <div class="logo-oo">
+                <h3 class="brand-logo">OO</h3>
+            </div>
+            <img src="https://img.icons8.com/quill/50/k.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            <h6 class="nav-b">.Show</h6>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-ls" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/login">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/creat">SignUP</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+{% endblock %}
