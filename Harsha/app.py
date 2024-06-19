@@ -22,11 +22,11 @@ def user():
     if req == 'POST':
         return "User Page"
     
-@app.route('/creat', methods = ['GET', 'POST'])
+@app.route('/create', methods = ['GET', 'POST'])
 def creat():
     req = request.method 
     if req == 'GET':
-        return render_template('creat.html')
+        return render_template('create.html')
     else:
         return "Hello"
     
