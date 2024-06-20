@@ -1,0 +1,72 @@
+{% extends 'header.html' %}
+
+{% block title %}
+Book.show
+{% endblock %}
+
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/styles.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/user.css') }}">
+{% endblock %}
+
+{% block body %}
+<nav class="navbar navbar-expand-lg bg-body-tertiary nav-btn">
+    <div class="container-fluid">
+      <a class="navbar-brand nav-b" href="/">
+        <img src="https://img.icons8.com/ios-filled/50/b.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        <div class="logo-oo">
+            <h3 class="brand-logo">OO</h3>
+        </div>
+        <img src="https://img.icons8.com/quill/50/k.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+        <h6 class="nav-b">.Show</h6>
+      </a>
+    </div>
+
+  <section class="loc">
+      <div class="sec">
+        <form action="#" method="#">
+            <div class="city">
+                <div class="form-floating btn-div">
+                    <button type="submit" name="bengaluru" class="btn btn-login btn-success">Bengaluru</button>
+                </div>
+                <div class="form-floating btn-div">
+                    <button type="submit" name="mimbi" class="btn btn-login btn-outline-success">Mumbi</button>
+                </div>
+                <div class="form-floating btn-div">
+                    <button type="submit" name="delhi" class="btn btn-login btn-outline-success">Delhi</button>
+                </div>
+                <div class="form-floating btn-div">
+                    <button type="submit" name="hyderabad" class="btn btn-login btn-outline-success">Hyderabad</button>
+                </div>
+                <div class="form-floating btn-div">
+                    <button type="submit" name="kochi" class="btn btn-login btn-outline-success">Kochi</button>
+                </div>
+                <div class="form-floating btn-div">
+                    <button type="submit" name="puna" class="btn btn-login btn-outline-success">Puna</button>
+                </div>
+            </div>
+        </form>
+    </div>
+  </section>
+</nav>
+
+<!-- <section class="sel_loc">
+        <img class="loc-img" src="data:image/png;base64,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" alt="up-arrow">
+        <h1>Select Location</h1>
+        
+    </section> -->
+    <section class="theatre">
+        <div class="t_names">
+            <img class="t_img" src="https://nishantverma.in/wp-content/uploads/2024/01/PVR-Cinemas-Logo-Nishant-Verma.jpg" alt="pvr">
+            <img class="t_img" src="https://nishantverma.in/wp-content/uploads/2024/01/INOX-Leisure-Logo-Nishant-Verma.jpg" alt="inox">
+            <img src="https://nishantverma.in/wp-content/uploads/2024/01/Cinepolis-Logo-Nishant-Verma.jpg" alt="cime" class="t_img">
+            <img src="https://nishantverma.in/wp-content/uploads/2024/01/Cinepolis-Logo-Nishant-Verma.jpg" alt="carnival" class="t_img">
+            <img src="https://nishantverma.in/wp-content/uploads/2024/01/Miraj-Cinemas-Logo-Nishant-Verma.jpg" alt="miraj" class="t_img">
+            <img src="https://nishantverma.in/wp-content/uploads/2024/01/Satyam-Cineplexes-Logo-Nishant-Verma.jpg" alt="" class="t_img">
+        </div>
+    </section>
+
+
+
+{% endblock %}

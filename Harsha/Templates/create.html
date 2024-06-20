@@ -4,30 +4,42 @@
 Creat Account
 {% endblock %}
 
+
+{% block link %}
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/login.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/create.css') }}">
+{% endblock %}
+
 {% block body %}
 <section class="main">
     <div class="login-page">
-        <h1 class = "brand-login">BOOk.Show</h1>
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Full Name">
-            <label for="floatingInput">Full Name</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
-        </div>
-        <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="Contect No.">
-            <label for="floatingInput">Contect No.</label>
-        </div>
+        <form action="/login" method="POST">
+            <a class="login-a mb-3" href="/">
+                <h1 class = "brand-login">BOOk<span>.Show</span></h1>
+                <p>Create Your Account</p>
+            </a>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="full_name" id="floatingInput" placeholder="Full Name">
+                <label for="floatingInput">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" name="email" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" name="password" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" name="Ph_number" id="floatingInput" placeholder="Contect No.">
+                <label for="floatingInput">Contect No.</label>
+            </div>
+            <div class="form-floating mb-3 btn-div">
+                <button type="submit" class="btn btn-login btn-outline-primary">Creat Account</button>
+            </div>
+        </form>
     </div>
-    <form action="/login" method="GET">
-        <button type="submit" class="btn btn-login btn-outline-primary">Creat Account</button>
-    </form>
 </section>
 
 {% endblock %}
