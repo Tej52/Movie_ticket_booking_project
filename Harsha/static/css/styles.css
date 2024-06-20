@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo-oo{
+    display: inline;
+}
+
+.brand-logo{
+    display: inline;
+    /* margin-top: 500px; */
+}
+
+.nav-b{
+    display: flex;
+    align-items: end;
+    color: rgb(210, 4, 217);
+}
+
+.nav-ls{
+    display: flex;
+    justify-content: end;
+    /* margin: ; */
+}
+
+/* Login */
