@@ -1,5 +1,5 @@
 <?php
-    include("database.php");
+    //include("database.php");
     // echo $conn;
 ?>
 
@@ -17,9 +17,9 @@
         <div class="box">
         <h1 class="login" >Login</h1>
 
-        <label>E-mail : <input class="name" type="text" name="name" placeholder="(e.g : Rahul123@gmail.com )" minlength="5" required></input></label> <br>
+        <label>E-mail : <input class="name" type="text" name="name" title="Enter the E-mail" placeholder="(e.g : Rahul123@gmail.com )" minlength="5" required></input></label> <br>
         
-        <label>Password : <input type="text" name="pass" minlength="3" required></input></label> <br>
+        <label>Password : <input type="text" name="pass" minlength="3" ></input></label> <br>
 
         <a href="signup.php">Create Account</a>
         

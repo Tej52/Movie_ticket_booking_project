@@ -1,0 +1,21 @@
+.main{
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main>.red{
+    width: 300px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: #F84464;
+    /* align-self: center; */
+}
+
+.main>.white{
+    width: 300px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: #fff;
+}

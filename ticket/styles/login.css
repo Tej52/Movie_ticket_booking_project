@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content{
+    border: 2px solid #0096FF;
+    border-radius: 15px;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+}
